@@ -39,6 +39,12 @@ li {
   margin-bottom: 20px;
 }
 
+.weather-temperature img {
+  width: 64px;
+  height: 64px;
+  margin-right: 6px;
+}
+
 .weather-temperature strong {
   font-size: 64px;
   line-height: 1;
