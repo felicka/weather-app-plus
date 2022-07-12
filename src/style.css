@@ -65,17 +65,28 @@ li {
   text-decoration: none;
 }
 
-.coder {
-  text-align: left;
-  font-size: 14px;
-  font-family: monospace;
-  margin: 10 px auto;
-}
-
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
   columns: black;
 }
 
-.
+.weather-forecast-date {
+  margin-top: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.coder {
+  text-align: left;
+  font-size: 14px;
+  font-family: monospace;
+  margin: 10 px auto;
+}
