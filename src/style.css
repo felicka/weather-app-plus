@@ -57,6 +57,14 @@ li {
   top: -34px;
 }
 
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
+
 .coder {
   text-align: left;
   font-size: 14px;
