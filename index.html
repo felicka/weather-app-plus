@@ -22,8 +22,8 @@
             <h1 id="city"></h1>
             <ul>
               <li>Last Updated:<span id="date"></span></li>
-              <li>Description</li>
-              <li>Feels like: 10℃</li>
+              <li id="description">Description</li>
+              <li id="feels_like">Feels like: 10℃</li>
             </ul>
           </div>
           <div class="row">
@@ -31,16 +31,16 @@
               <div class="d-flex weather-temperature">
                 <img src="" alt="clear" class="float-left" />
                 <div class="float-left">
-                  <strong>10</strong>
-                  <span class="units">℃ | ℉</span>
+                  <strong id="temperature"></strong>
+                  <span class="units">℃|℉</span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: %</li>
-                <li>Wind: km/h</li>
-                <li>L:10℃ H:20℃</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>L: 10℃ H: 0℃</li>
               </ul>
             </div>
           </div>
@@ -57,7 +57,7 @@
                 />
               </div>
               <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-primary" />
+                <input type="submit" value="Search" class="btn btn-dark" />
               </div>
             </div>
           </form>
