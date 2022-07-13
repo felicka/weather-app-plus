@@ -151,4 +151,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let currentLocation = document.querySelector("#location");
 currentLocation.addEventListener("click", getLocation);
-search("Tokyo");
+search("Paris");
