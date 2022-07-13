@@ -13,6 +13,11 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="src/style.css" rel="stylesheet" />
     <title>Weather App Plus</title>
+    <style class="background-image">
+      body {
+        background-image: url("images/clouds.jpg");
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -21,8 +26,9 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last Updated:<span id="date"></span></li>
+              
               <li id="description"></li>
+              <li>Feels like:<span id="feels_like"></span></li>
             </ul>
           </div>
           <div class="row">
@@ -65,12 +71,14 @@
               </div>
             </div>
           </form>
+          <div>Last Updated:<span id="date"></span></div>
         </div>
+        <small class="coder">
+          <a href="#" target="_blank"> Open-source code </a> by Felicia &
+          <a href="#" target="_blank"> Background image </a> by xxx
+        </small>
       </div>
     </div>
-    <small class="coder">
-      <a href="#" target="_blank"> Open-source code </a> by Felicia
-    </small>
     <script src="src/index.js"></script>
   </body>
 </html>
