@@ -26,9 +26,8 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              
               <li id="description"></li>
-              <li>Feels like:<span id="feels_like"></span></li>
+              <li>Feels like: <span id="feels"></span>°</li>
             </ul>
           </div>
           <div class="row">
@@ -51,31 +50,40 @@
               </ul>
             </div>
           </div>
-          <div id="forecast" class="weather-forecast">Forecast</div>
           <hr />
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-6">
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Enter city name..."
-                  id="city-input"
-                />
-              </div>
-              <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-dark" />
-              </div>
-              <div class="col-3">
-                <button class="btn btn-dark" id="location">Current</button>
-              </div>
-            </div>
-          </form>
-          <div>Last Updated:<span id="date"></span></div>
+          <div id="forecast" class="weather-forecast"></div>
         </div>
+      </div>
+      <div class="form-wrapper">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Enter city name..."
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary" id="location">Current</button>
+            </div>
+          </div>
+        </form>
+        <div class="last-updated">Last updated:<span id="date"></span></div>
+        <hr />
         <small class="coder">
-          <a href="#" target="_blank"> Open-source code </a> by Felicia &
-          <a href="#" target="_blank"> Background image </a> by xxx
+          <a href="https://github.com/felicka/weather-app-plus" target="_blank">
+            Open-source code
+          </a>
+          by Felicia |
+          <a href="https://unsplash.com/@lauravinck" target="_blank">
+            Background image
+          </a>
+          by Laura Vinck
         </small>
       </div>
     </div>

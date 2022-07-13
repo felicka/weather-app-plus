@@ -4,17 +4,18 @@ body {
 
 h1 {
   color: black;
-  font-size: 34px;
+  font-size: 44px;
   font-weight: 100;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 li {
   list-style: none;
@@ -30,9 +31,18 @@ li {
   max-width: 600px;
   margin: 30px auto;
 }
+.form-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  border: 3px solid lightblue;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.8;
+}
 
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 3px solid lightblue;
   padding: 20px;
   border-radius: 15px;
   background-color: white;
@@ -78,6 +88,7 @@ li {
 .weather-forecast-date {
   margin-top: 16px;
   opacity: 0.5;
+  color: black;
 }
 
 .weather-forecast-temperature-min {
@@ -88,9 +99,13 @@ li {
   font-size: 13px;
 }
 
+.last-updated {
+  font-size: 12px;
+  text-align: center;
+}
 .coder {
-  text-align: left;
-  font-size: 14px;
+  text-align: center;
+  font-size: 10px;
   font-family: monospace;
   margin: 10 px auto;
 }

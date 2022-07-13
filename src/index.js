@@ -48,11 +48,11 @@ function displayForecast(response) {
     alt="" 
     width="42"/>
     <div class="weather-forecast-temperatures">
-    <span class="weather-forecast-temperature-max">${Math.round(
-      forecastDay.temp.max
-    )}° </span>
     <span class="weather-forecast-temperature-min">${Math.round(
       forecastDay.temp.min
+    )}° </span>
+    <span class="weather-forecast-temperature-max">${Math.round(
+      forecastDay.temp.max
     )}°</span>
     </div>
     </div>;
@@ -71,27 +71,24 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  let cityElement = document.querySelector("#city");
+  let dateElement = document.querySelector("#date");
+  let feelsElement = document.querySelector("#feels");
+  let temperatureElement = document.querySelector("#temperature");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let descriptionElement = document.querySelector("#description");
+  let iconElement = document.querySelector("#icon");
+
   celsiusTemperature = response.data.main.temp;
 
-  let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
-
-  let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-
-  let temperatureElement = document.querySelector("#temperature");
+  feelsElement.innerHTML = Math.round(response.data.main.feels_like);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
-
-  let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
-
-  let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
-
-  let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].main;
-
-  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
