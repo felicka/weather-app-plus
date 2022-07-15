@@ -107,14 +107,12 @@ li {
   font-size: 13px;
 }
 
-.row {
-  padding: 10px;
-}
 .last-updated {
   font-size: 14px;
   text-align: left;
   color: black;
 }
+
 .coder {
   font-family: monospace;
   font-size: 14px;
