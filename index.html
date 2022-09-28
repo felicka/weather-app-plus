@@ -31,7 +31,7 @@
             </ul>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="d-flex weather-temperature">
                 <img src="" id="icon" alt="clear" class="float-left" />
                 <div class="float-left">
@@ -43,7 +43,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 outside">
               <ul>
                 <li>Humidity: <span id="humidity"></span> %</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
@@ -57,7 +57,7 @@
       <div class="form-wrapper">
         <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 form">
               <input
                 type="search"
                 class="form-control"
@@ -65,10 +65,10 @@
                 id="city-input"
               />
             </div>
-            <div class="col-2">
+            <div class="col-md-2 form">
               <input type="submit" value="Search" class="btn btn-dark" />
             </div>
-            <div class="col-4">
+            <div class="col-md-4 form">
               <button class="btn btn-dark" id="location">📍 Current</button>
             </div>
           </div>
@@ -76,14 +76,14 @@
         <div class="last-updated">Last updated: <span id="date"></span></div>
       </div>
       <small class="coder">
-        <a href="https://github.com/felicka/weather-app-plus" target="_blank">
+        <p><a href="https://github.com/felicka/weather-app-plus" target="_blank">
           Open-source code
         </a>
-        by Felicia |
+        by Felicia </p>
         <a href="https://unsplash.com/@lauravinck" target="_blank">
           Background image
         </a>
-        by Laura Vinck
+        by Laura Vinck</p>
       </small>
     </div>
     <script src="src/index.js"></script>
